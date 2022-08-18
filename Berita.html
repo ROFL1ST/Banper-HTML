@@ -112,8 +112,8 @@
           >
             <!-- Box Satu -->
             <div
-              class="flex justify-center items-center cursor-pointer"
-              id="myButton"
+              class="flex justify-center items-center cursor-pointer myButton"
+              onclick="navigate()"
             >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
@@ -134,7 +134,10 @@
             </div>
             <!-- Box Satu -->
             <!-- Box Dua -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -154,7 +157,10 @@
             </div>
             <!-- Box Dua -->
             <!-- Box Tiga -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -174,7 +180,10 @@
             </div>
             <!-- Box Tiga -->
             <!-- Box Empat -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -194,7 +203,10 @@
             </div>
             <!-- Box Empat -->
             <!-- Box Lima -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -214,7 +226,10 @@
             </div>
             <!-- Box Lima -->
             <!-- Box Enam -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -234,7 +249,10 @@
             </div>
             <!-- Box Enam -->
             <!-- Box Tujuh -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -254,7 +272,10 @@
             </div>
             <!-- Box Tujuh -->
             <!-- Box Delapan -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              onclick="navigate()"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -413,9 +434,9 @@
   </body>
 
   <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
+    function navigate() {
       location.href = "http://172.21.1.112:5500/beritaPge/Detail.html";
-    };
+    }
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("mySidenav").style.overflow = "hidden";
