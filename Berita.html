@@ -6,18 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/common.css" />
   </head>
   <body>
     <div>
+      <div id="mySidenav" class="sidenav drop-shadow-lg">
+        <!-- <div class="bg-blue-900 h-0.5 relative top-0"></div> -->
+        <div
+          class="flex justify-between bg-blue-900  items-center gap-x-8 px-10 bg-blue-900"
+        >
+          <img
+            src="assets/banper.png"
+            alt=""
+            class="xl:h-36 h-20"
+          />
+          <a
+            href="javascript:void(0)"
+            class="top-4 right-6"
+            onclick="closeNav()"
+            >&times;</a
+          >
+        </div>
+        <a href="#" onclick="closeNav()">Home</a>
+        <a href="#" onclick="closeNav()">Mekanisme Pendaftaran</a>
+        <a href="#" onclick="closeNav()">Berita</a>
+        <a href="#" onclick="closeNav()">Galeri</a>
+      </div>
       <!-- Header -->
-      <div class="w-full fixed z-50">
+      <div class="xl:w-full fixed z-40 w-screen">
         <div class="bg-blue-900 h-6"></div>
         <div
-          class="bg-blue-400 w-full h-20 bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex items-center justify-between px-8 lg:px-16"
+          class="bg-blue-400 w-full xl:h-20 bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex items-center justify-between px-8 lg:px-16"
         >
-          <img src="assets/banper.png" alt="" class="h-36" />
-          <nav class="flex items-center space-x-6">
-            <ul class="flex items-center space-x-6">
+          <img src="assets/banper.png" alt="" class="xl:h-36 h-20" />
+          <svg
+            href="javascript:void(0);"
+            onclick="openNav()"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 xl:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <nav class="xl:flex xl:items-center xl:space-x-6 hidden">
+            <ul class="flex flex-col xl:flex-row items-center space-x-6">
               <li class="cursor-pointer hover:text-gray-900 text-sm outline-2">
                 Home
               </li>
@@ -71,7 +110,10 @@
         <div class="pt-11">
           <div class="grid grid-cols-4 lg:gap-x-1 gap-x-4 gap-y-5 px-24 pb-16">
             <!-- Box Satu -->
-            <div class="flex justify-center items-center cursor-pointer">
+            <div
+              class="flex justify-center items-center cursor-pointer"
+              id="myButton"
+            >
               <div class="h-full rounded-2xl bg-slate-100">
                 <img
                   src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
@@ -241,17 +283,25 @@
         <!-- Footer -->
         <footer class="text-gray-600 body-font">
           <div
-            class="px-5 py-24 lg:px-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+            class="px-5 py-5 lg:py-24 lg:px-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
           >
             <div
               class="w-64 flex-shrink-0 md:mx-0 mx-auto lg:text-center text-left md:mt-0 mt-10"
             >
               <div
-                class="flex title-font font-medium items-center gap-x-8 mr-10 justify-start lg:justify-center text-gray-900"
+                class="flex title-font font-medium items-center xl:gap-x-8 mr-10 justify-start lg:justify-center text-gray-900"
               >
-                <img src="assets/kemenparekraf.png" alt="logo" class="w-36" />
+                <img
+                  src="assets/kemenparekraf.png"
+                  alt="logo"
+                  class="xl:w-36 w-20"
+                />
 
-                <img src="assets/wonderful.png" alt="logo" class="w-72" />
+                <img
+                  src="assets/wonderful.png"
+                  alt="logo"
+                  class="xl:w-72 w-54"
+                />
               </div>
             </div>
             <div
@@ -281,7 +331,7 @@
             </div>
           </div>
           <div
-            class="mx-auto py-4 px-5 flex justify-center items-center flex-col sm:flex-row rounded-b-lg"
+            class="mx-auto py-4 px-5 flex justify-center items-center rounded-b-lg"
           >
             <a class="text-black">
               <svg
@@ -360,4 +410,21 @@
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+      location.href = "http://172.21.1.112:5500/beritaPge/Detail.html";
+    };
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.overflow = "hidden";
+
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.overflow = "auto";
+
+    }
+  </script>
 </html>

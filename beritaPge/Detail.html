@@ -9,13 +9,27 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="w-full fixed z-50">
+    <div class="xl:w-full fixed z-50 w-screen">
       <div class="bg-blue-900 h-6"></div>
       <div
         class="bg-blue-400 w-full h-20 bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex items-center justify-between px-8 lg:px-16"
       >
-        <img src="../assets/banper.png" alt="" class="h-36" />
-        <nav class="flex items-center space-x-6">
+        <img src="../assets/banper.png" alt="" class="xl:h-36 h-20" />
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 xl:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        <nav class="xl:flex xl:items-center xl:space-x-6 hidden">
           <ul class="flex items-center space-x-6">
             <li class="cursor-pointer hover:text-gray-900 text-sm outline-2">
               Home
