@@ -10,16 +10,13 @@
   </head>
   <body>
     <div>
+      <!-- Header For Mobile -->
       <div id="mySidenav" class="sidenav drop-shadow-lg">
         <!-- <div class="bg-blue-900 h-0.5 relative top-0"></div> -->
         <div
-          class="flex justify-between bg-blue-900  items-center gap-x-8 px-10 bg-blue-900"
+          class="flex justify-between bg-blue-900 items-center gap-x-8 px-10 bg-blue-900"
         >
-          <img
-            src="assets/banper.png"
-            alt=""
-            class="xl:h-36 h-20"
-          />
+          <img src="assets/banper.png" alt="" class="xl:h-36 h-20" />
           <a
             href="javascript:void(0)"
             class="top-4 right-6"
@@ -32,6 +29,8 @@
         <a href="#" onclick="closeNav()">Berita</a>
         <a href="#" onclick="closeNav()">Galeri</a>
       </div>
+      <!-- Header For Mobile -->
+
       <!-- Header -->
       <div class="xl:w-full fixed z-40 w-screen">
         <div class="bg-blue-900 h-6"></div>
@@ -108,7 +107,9 @@
         <!-- Menu -->
         <!-- Content -->
         <div class="pt-11">
-          <div class="grid grid-cols xl:grid-cols-4 lg:gap-x-1 gap-x-4 gap-y-5 px-10 xl:px-24 pb-16">
+          <div
+            class="grid grid-cols xl:grid-cols-4 lg:gap-x-1 gap-x-4 gap-y-5 px-10 xl:px-24 pb-16"
+          >
             <!-- Box Satu -->
             <div
               class="flex justify-center items-center cursor-pointer"
@@ -418,13 +419,11 @@
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("mySidenav").style.overflow = "hidden";
-
     }
 
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("mySidenav").style.overflow = "auto";
-
     }
   </script>
 </html>
