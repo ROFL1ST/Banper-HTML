@@ -56,18 +56,18 @@
           </svg>
           <nav class="xl:flex xl:items-center xl:space-x-6 hidden">
             <ul class="flex flex-col xl:flex-row items-center space-x-6">
-              <li class="cursor-pointer hover:text-gray-900 text-sm outline-2">
+              <li onclick="location.href = './Dashboard.html'" class="text-blue-900 rounded-full font-semibold bg-white bg-opacity-80 px-3 py-1 items-center">
                 Home
               </li>
               <li class="cursor-pointer hover:text-gray-900 text-sm outline-2">
                 Mekanisme Pendaftaran
               </li>
-              <li
-                class="text-blue-900 rounded-full font-semibold bg-white bg-opacity-80 px-3 py-1 items-center"
+              <li onclick="location.href = './Berita.html'"
+                class="cursor-pointer hover:text-gray-900 text-sm outline-2"
               >
                 Berita
               </li>
-              <li class="cursor-pointer hover:text-gray-900 text-sm outline-2">
+              <li onclick="location.href = './Galery.html'" class="cursor-pointer hover:text-gray-900 text-sm outline-2">
                 Galeri
               </li>
             </ul>
@@ -506,7 +506,7 @@
   </body>
   <script type="text/javascript">
     function navigate() {
-      location.href = "localhost:5500/beritaPge/Detail.html";
+      location.href = "Detail.html";
     }
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
