@@ -40,7 +40,7 @@
           <img src="assets/banper.png" alt="" class="xl:h-36 h-20" />
           <svg
             href="javascript:void(0);"
-            onclick="openNav()"
+            onclick="openNav();"
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 xl:hidden"
             fill="none"
@@ -56,18 +56,25 @@
           </svg>
           <nav class="xl:flex xl:items-center xl:space-x-6 hidden">
             <ul class="flex flex-col xl:flex-row items-center space-x-6">
-              <li onclick="location.href = './Dashboard.html'" class="cursor-pointer hover:text-gray-900 text-sm outline-2">
+              <li
+                onclick="location.href = './Dashboard.html'"
+                class="cursor-pointer hover:text-gray-900 text-sm outline-2"
+              >
                 Home
               </li>
               <li class="cursor-pointer hover:text-gray-900 text-sm outline-2">
                 Mekanisme Pendaftaran
               </li>
-              <li onclick="location.href = './Berita.html'"
+              <li
+                onclick="location.href = './Berita.html'"
                 class="text-blue-900 rounded-full font-semibold bg-white bg-opacity-80 px-3 py-1 items-center"
               >
                 Berita
               </li>
-              <li onclick="location.href = './Galery.html'" class="cursor-pointer hover:text-gray-900 text-sm outline-2">
+              <li
+                onclick="location.href = './Galery.html'"
+                class="cursor-pointer hover:text-gray-900 text-sm outline-2"
+              >
                 Galeri
               </li>
             </ul>
