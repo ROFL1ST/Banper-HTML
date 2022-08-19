@@ -3,6 +3,7 @@
     position: fixed; /* Stay in place */
     z-index: 50; /* Sit on top */
   justify-content: center; /* Location of the box */
+  overflow-y: auto;
   /* flex-direction: row; */
   align-items: center;
     left: 0;

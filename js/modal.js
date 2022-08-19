@@ -9,11 +9,14 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
 btn.onclick = function () {
   modal.style.display = "flex";
+  modal.style.overflowY = "none"
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
+  modal.style.overflowY = "auto"
+
 };
 
 // When the user clicks anywhere outside of the modal, close it
