@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <style>
+      .swiper-slide {
+        width: 25%;
+      }
+    </style>
   </head>
   <body>
     <div
@@ -39,7 +44,7 @@
                 Selengkapnya
               </button>
             </div>
-            <div class="swiper-slide" style="width: 25%; margin-right: 10px">
+            <div class="swiper-slide">
               <div
                 class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
                 style="
@@ -49,7 +54,7 @@
                 <h1 class="text-white font-semibold">LOREM IPSUM</h1>
               </div>
             </div>
-            <div class="swiper-slide" style="width: 25%; margin-right: 10px">
+            <div class="swiper-slide">
               <div
                 class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
                 style="
@@ -59,7 +64,7 @@
                 <h1 class="text-white font-semibold">LOREM IPSUM</h1>
               </div>
             </div>
-            <div class="swiper-slide" style="width: 25%; margin-right: 10px">
+            <div class="swiper-slide">
               <div
                 class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
                 style="
@@ -69,7 +74,7 @@
                 <h1 class="text-white font-semibold">LOREM IPSUM</h1>
               </div>
             </div>
-            <div class="swiper-slide" style="width: 25%; margin-right: 10px">
+            <div class="swiper-slide">
               <div
                 class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
                 style="
@@ -79,7 +84,7 @@
                 <h1 class="text-white font-semibold">LOREM IPSUM</h1>
               </div>
             </div>
-            <div class="swiper-slide" style="width: 25%; margin-right: 10px">
+            <div class="swiper-slide">
               <div
                 class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
                 style="
@@ -89,7 +94,7 @@
                 <h1 class="text-white font-semibold">LOREM IPSUM</h1>
               </div>
             </div>
-            <div class="swiper-slide" style="width: 25%; margin-right: 10px">
+            <div class="swiper-slide">
               <div
                 class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
                 style="
@@ -151,9 +156,11 @@
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "horizontal",
-      //   loop: true,
+      //   loop: true, slidesPerView: 'auto',
+    //   autoHeight: true,
       slidesPerView: 3,
       spaceBetween: 30,
+      cssMode: true,
       // If we need pagination
       pagination: {
         el: ".swiper-pagination",
