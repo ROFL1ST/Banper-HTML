@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/common.css" />
     <link rel="stylesheet" href="style/modal.css" />
-
+    <link rel="stylesheet" href="https://use.typekit.net/uty3yna.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -20,109 +20,29 @@
         $("#footer").load("components/footer.html");
       });
     </script>
+    <style>
+      body {
+        font-family: open-sans, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <!-- Header For Mobile -->
-      <div id="mySidenav" class="sidenav drop-shadow-lg">
-        <!-- <div class="bg-blue-900 h-0.5 relative top-0"></div> -->
-        <div
-          class="flex justify-between bg-blue-900 items-center gap-x-8 px-10 bg-blue-900"
-        >
-          <img src="assets/banper.png" alt="" class="xl:h-36 h-20" />
-          <a
-            href="javascript:void(0)"
-            class="top-4 right-6"
-            onclick="closeNav()"
-            >&times;</a
-          >
-        </div>
-        <a href="#" onclick="closeNav()">Home</a>
-        <a href="#" onclick="closeNav()">Mekanisme Pendaftaran</a>
-        <a href="#" onclick="closeNav()">Berita</a>
-        <a href="#" onclick="closeNav()">Galeri</a>
-      </div>
-      <!-- Header For Mobile -->
-
-      <!-- Header -->
-      <div class="xl:w-full fixed z-40 w-screen">
-        <div class="bg-blue-900 h-6"></div>
-        <div
-          class="bg-blue-400 w-full xl:h-20 bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex items-center justify-between px-8 lg:px-16"
-        >
-          <img src="assets/banper.png" alt="" class="xl:h-36 h-20" />
-          <svg
-            href="javascript:void(0);"
-            onclick="openNav()"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 xl:hidden"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-          <nav class="xl:flex xl:items-center xl:space-x-6 hidden">
-            <ul class="flex flex-col xl:flex-row items-center space-x-6">
-              <li
-                onclick="location.href = './Dashboard.html'"
-                class="text-blue-900 rounded-full font-semibold bg-white bg-opacity-80 px-3 py-1 items-center"
-              >
-                Home
-              </li>
-              <div class="dropdown">
-                <button class="dropbtn">Mekanisme Pendaftaran</button>
-                <div class="dropdown-content">
-                  <a href="#">F.A.Q</a>
-                  <hr>
-                  <a href="#">Unduh Juknis</a>
-                  <hr>
-                  <a href="#">Unduh Template</a>
-
-                </div>
-              </div>
-              <li
-                onclick="location.href = './Berita.html'"
-                class="cursor-pointer hover:text-gray-900 text-sm outline-2"
-              >
-                Berita
-              </li>
-              <li
-                onclick="location.href = './Galery.html'"
-                class="cursor-pointer hover:text-gray-900 text-sm outline-2"
-              >
-                Galeri
-              </li>
-            </ul>
-            <ul
-              class="text-sm md:py-1 md:pl-4 md:border-l md:border-gray-400 flex items-center space-x-3"
-            >
-              <li>Login</li>
-              <li>Register</li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <!-- Header -->
+      <div id="navbar"></div>
       <div>
         <div
-          class="mx-auto flex px-5 py-60 md:flex-row flex-col items-center rounded-b-3xl bg-no-repeat bg-cover"
-          style="
-            background-image: url(https://cdn.pixabay.com/photo/2018/04/02/21/33/building-3285254_960_720.jpg);
-          "
+          class="mx-auto flex px-5 py-60 md:flex-row flex-col items-center rounded-b-3xl bg-no-repeat bg-cover bg-center"
+          style="background-image: url('assets/Group\ 315.png')"
         >
           <div
-            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center text-white"
+            class="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center text-white"
           >
             <h1 class="title-font sm:text-4xl text-3xl mb-4">
               Banper Infrastruktur Ekraf
             </h1>
-            <p class="mb-8 leading-relaxed w-2/5 sm:leading-relaxed w-3/4">
+            <p class="mb-8 leading-relaxed sm:leading-relaxed w-2/5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
               recusandae cumque distinctio doloribus error fugit ab, provident
               molestiae quibusdam dignissimos nam numquam, autem facilis dolores
@@ -134,7 +54,7 @@
       <div>
         <button
           id="myBtn"
-          class="flex mx-auto xl:-mt-9 -mt-48 text-white bg-red-500 border-0  focus:outline-none hover:bg-red-600 rounded-xl text-lg py-6 px-24"
+          class="flex mx-auto xl:-mt-9 -mt-48 text-white bg-red-500 border-0 focus:outline-none hover:bg-red-600 rounded-xl text-lg py-6 px-24"
         >
           Daftar Sekarang
         </button>
@@ -157,7 +77,7 @@
       <!-- {/* MEKANISME CLOSE */} -->
 
       <!-- {/* BERITA OPEN */} -->
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="px-5 py-24 mx-auto flex flex-wrap">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
             class="sm:text-2xl text-xl font-bold title-font mb-4 text-blue-900"
@@ -166,15 +86,17 @@
           </h1>
         </div>
         <div
-          class="flex xl:flex-row gap-x-5 gap-x-1 xl:gap-x-4 md:gap-x-4 sm:gap-x-4 gap-y-5 px-5 xl:px-24 pb-16 flex-col"
+          class="flex xl:flex-row lg:flex-row md:flex-row gap-x-5 gap-x-1 xl:gap-x-4 md:gap-x-4 sm:gap-x-4 gap-y-5 px-5 xl:px-24 pb-16 flex-col"
         >
           <!-- Box Satu -->
-          <div class="xl:w-1/2 md:w-1/4 lg:w-full sm:w-1/4">
-            <div class="bg-gray-100 rounded-lg flex xl:h-full h-64 justify-between ">
-              <div class="w-1/2 ">
+          <div class="xl:w-1/2 md:w-1/2 w-full">
+            <div
+              class="bg-gray-100 rounded-lg flex xl:h-full h-64 justify-between"
+            >
+              <div class="w-1/2">
                 <img
                   class="rounded h-full object-cover object-center"
-                  src="https://akcdn.detik.net.id/api/wm/2022/08/18/adrien-rabiot_169.jpeg?wid=54&w=650&v=1&t=jpeg"
+                  src="assets/Subtraction 9.png"
                   alt="content"
                 />
               </div>
@@ -185,19 +107,19 @@
                   23 Desember
                 </h3>
                 <h2
-                  class="text-lg lg:text-sm text-gray-900 font-medium title-font mb-4 lg:mb-1"
+                  class="text-lg xl:text-xl text-gray-900 font-bold title-font mb-4 lg:mb-1"
                 >
                   One piece release
                 </h2>
-                <div class="leading-relaxed text-base lg:text-xs ">
-                  <p class="text-ellipsis overflow-hidden">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Illum nulla nemo eum. Nisi rerum reiciendis, ex quia
-                    laboriosam quibusdam maiores?
+                <div class="leading-relaxed text-base lg:text-xl">
+                  <p class="overflow-hidden font-light fifty-chars  xl:h-64 lg:h-64 md:h-64 h-20">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua.
                   </p>
                 </div>
                 <p
-                  class="items-end mt-12 lg:mt-5 w-full flex justify-start bottom-0 text-sm lg:text-xs"
+                  class="items-end mt-5 font-bold lg:mt-5 w-full flex justify-start bottom-0 text-sm xl:text-sm"
                 >
                   Jakarta
                 </p>
@@ -206,7 +128,45 @@
           </div>
           <!-- Box Satu -->
           <!-- Box Dua -->
-          
+          <div class="xl:w-1/2 md:w-1/2 w-full">
+            <div
+              class="bg-gray-100 rounded-lg flex xl:h-full h-64 justify-between"
+            >
+              <div class="w-1/2">
+                <img
+                  class="rounded h-full object-cover object-center"
+                  src="assets/Subtraction 10.png"
+                  alt="content"
+                />
+              </div>
+              <div class="w-1/2 lg:w-2/3 p-10 lg:p-7">
+                <h3
+                  class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+                >
+                  23 Desember
+                </h3>
+                <h2
+                  class="text-lg xl:text-xl text-gray-900 font-bold title-font mb-4 lg:mb-1"
+                >
+                  One piece release
+                </h2>
+                <div class="leading-relaxed">
+                  <p
+                    class="overflow-hidden font-light fifty-chars xl:text-xl text-sm xl:h-64 lg:h-64 md:h-64 h-20"
+                  >
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua.
+                  </p>
+                </div>
+                <p
+                  class="items-end mt-5 font-bold lg:mt-5 w-full flex justify-start bottom-0 text-sm xl:text-sm"
+                >
+                  Jakarta
+                </p>
+              </div>
+            </div>
+          </div>
           <!-- Box Dua -->
         </div>
         <!-- {/* BERITA CLOSE */} -->
@@ -694,5 +654,4 @@
   </script>
   <script src="js/modal.js"></script>
   <script src="js/limit.js"></script>
-
 </html>

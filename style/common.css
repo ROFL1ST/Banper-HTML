@@ -79,3 +79,9 @@
 
 
 
+  .fifty-chars {
+    /* width: 30ch; */
+    /* overflow: hidden; */
+    white-space: normal;
+    text-overflow: ellipsis;
+}
