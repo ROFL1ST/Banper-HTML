@@ -12,14 +12,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <style>
-      .swiper-slide {
-        width: 25%;
-      }
     </style>
   </head>
   <body>
+    <!-- Dekstop -->
     <div
-      class="w-full h-full bg-no-repeat bg-cover bg-bottom"
+      class="w-full h-full bg-no-repeat bg-cover bg-bottom 2xl:flex xl:flex lg:flex md:flex hidden 2xl:flex-col xl:flex-col lg:flex-col md:flex-col"
       style="
         background-image: url(https://cdn.pixabay.com/photo/2018/04/02/21/33/building-3285254_960_720.jpg);
       "
@@ -147,6 +145,94 @@
         </div>
       </div>
     </div>
+    <!-- Dekstop -->
+    <!-- Mobile -->
+    <div
+      class="w-full h-full bg-no-repeat bg-cover 2xl:hidden xl:hidden lg:hidden md:hidden  flex flex-col bg-bottom"
+      style="
+        background-image: url(https://cdn.pixabay.com/photo/2018/04/02/21/33/building-3285254_960_720.jpg);
+      "
+    >
+      <div class="bg-gray-600 bg-opacity-50 h-full w-full py-24">
+        <h1 class="text-6xl font-semibold text-white text-center">Foto</h1>
+        <p class="text-white text-center my-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          repudiandae officia veritatis dignissimos fugit nihil error
+        </p>
+       
+        <div class="swiper  " style="padding-right: 15px; padding-left: 15px;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide " >
+              <div
+                class="h-80 rounded-2xl w-full  bg-cover flex flex-col justify-end px-5 py-5"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="h-80 rounded-2xl w-full bg-cover flex flex-col justify-end px-5 py-5"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+              </div>
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-16">
+          <button class="bg-blue-500 text-white px-5 py-3 rounded-full">
+            Selengkapnya
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile -->
   </body>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
   <!-- <script src="../js/slider.js"></script> -->
@@ -157,7 +243,7 @@
       // Optional parameters
       direction: "horizontal",
       //   loop: true, slidesPerView: 'auto',
-    //   autoHeight: true,
+      //   autoHeight: true,
       slidesPerView: 3,
       spaceBetween: 30,
       cssMode: true,
@@ -172,7 +258,24 @@
         nextEl: ".next",
         prevEl: ".prev",
       },
-
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
       // And if we need scrollbar
       scrollbar: {
         el: ".swiper-scrollbar",
