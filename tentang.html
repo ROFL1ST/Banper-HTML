@@ -33,9 +33,9 @@
   <body>
     <div>
       <div id="navbar"></div>
-      <div class="pt-56">
+      <div class="lg:pt-56 pt-26">
         <div>
-          <div class="relative bottom-24 mx-24">
+          <div class="relative lg:flex hidden bottom-24 mx-24">
             <div
               class="w-full lg:h-72 2xl:h-96 rounded-2xl absolute shadow-md"
               style="
@@ -44,10 +44,10 @@
             ></div>
           </div>
           <div
-            class="w-full h-full bg-gray-100 rounded-md lg:pt-52 2xl:pt-80 px-24 pb-24"
+            class="w-full h-full bg-gray-100 rounded-md lg:pt-52 pt-32 2xl:pt-80 lg:px-24 pb-24 px-10"
           >
             <h1
-              class="capitalize text-center lg:text-2xl 2xl:text-4xl font-bold text-blue-900"
+              class="capitalize text-center lg:text-2xl 2xl:text-4xl font-bold text-blue-900 text-xl"
             >
               tentang bantuan pemerintah
             </h1>
@@ -104,7 +104,10 @@
                 belas) subsektor ekonomi kreatif, yaitu:
               </p>
             </div>
-            <div id="subsector" class="grid grid-cols-3 gap-x-5 gap-y-1 mt-5">
+            <div
+              id="subsector"
+              class="grid lg:grid-cols-3 gap-x-5 gap-y-1 mt-5"
+            >
               <!-- <div class="px-2 py-1 w-full border bg-white text-sm">
                 1. aplikasi
               </div> -->
@@ -119,16 +122,21 @@
             <div
               class="flex justify-center space-x-10 lg:text-sm 2xl:text-2xl my-5"
             >
-              <button class="bg-blue-800 rounded-full text-white px-4 py-2">
+              <button
+                class="bg-blue-800 rounded-full text-white lg:px-4 px-2.5 py-2"
+              >
                 Unduh Juknis</button
-              ><button class="bg-blue-800 rounded-full text-white px-4 py-2">
+              ><button
+                class="bg-blue-800 rounded-full text-white lg:px-4 px-2.5 py-2"
+              >
                 Unduh Template
               </button>
             </div>
-            <div id="foto"></div>
-            <div id="video"></div>
           </div>
         </div>
+        <div id="foto"></div>
+        <div id="video"></div>
+        <div id="footer"></div>
       </div>
     </div>
     <div id="footer"></div>
