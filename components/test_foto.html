@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-no-repeat bg-cover"
+      style="
+        background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/16/buildings-1869425_960_720.jpg);
+      "
+    >
+      <div class="bg-black bg-opacity-30 w-full h-full py-24 px-10">
+        <div class="swiper mySwiper w-full h-5/6">
+          <div class="swiper-wrapper flex items-center">
+            <div class="swiper-slide text-white">
+              <h1 class="text-6xl font-semibold">Foto</h1>
+              <p class="lg:text-sm my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                dolorum deleniti eos praesentium, consectetur ipsam.
+              </p>
+              <button
+                class="bg-blue-800 bg-opacity-70 px-5 py-1.5 rounded-full lg:text-sm"
+              >
+                Selengkapnya
+              </button>
+            </div>
+            <div id="img-slider" class="swiper-slide">
+              <div
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-9 px-5"
+                >
+                  <h3 class="text-white uppercase text-2xl font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div id="img-slider" class="swiper-slide">
+              <div
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
+                style="
+                  background-image: url(https://faktualid.com/wp-content/uploads/2022/08/220820sandiaga-uno.jpeg);
+                "
+              >
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-9 px-5"
+                >
+                  <h3 class="text-white uppercase text-2xl font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div id="img-slider" class="swiper-slide">
+              <div
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
+                style="
+                  background-image: url(https://media.suara.com/pictures/653x366/2022/08/22/47658-kolase-ridwan-kamil-sandiaga-uno.jpg);
+                "
+              >
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-9 px-5"
+                >
+                  <h3 class="text-white uppercase text-2xl font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div id="img-slider" class="swiper-slide">
+              <div
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
+                style="
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
+                "
+              >
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-9 px-5"
+                >
+                  <h3 class="text-white uppercase text-2xl font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center space-x-3 py-5">
+          <button class="button-prev prevEl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
+              />
+            </svg>
+          </button>
+          <button class="button-next nextEl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      var swiper = new Swiper(".mySwiper", {
+        direction: "horizontal",
+        slidePerView: 2,
+        spaceBetween: 20,
+        navigation: {
+          prevEl: ".button-prev",
+          nextEl: ".button-next",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
