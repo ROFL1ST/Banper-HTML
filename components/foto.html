@@ -4,174 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foto</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="../style/slider.css" /> -->
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <style>
-      .swiper-dekstop {
-        width: 320px !important;
-      }
-      /* .swiper-mobile {
-        width: 320px !important;
-      } */
-    </style>
   </head>
   <body>
-    <!-- Dekstop -->
     <div
-      class="w-full h-full bg-no-repeat bg-cover bg-bottom 2xl:flex xl:flex lg:flex md:flex hidden 2xl:flex-col xl:flex-col lg:flex-col md:flex-col"
+      class="w-full lg:h-full 2xl:h-[90vh] bg-no-repeat bg-cover"
       style="
-        background-image: url(https://cdn.pixabay.com/photo/2018/04/02/21/33/building-3285254_960_720.jpg);
+        background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/16/buildings-1869425_960_720.jpg);
       "
     >
-      <div class="bg-black h-full w-full bg-opacity-25 pl-10 py-60">
-        <div class="swiper mySwiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide space-y-5 my-auto">
-              <h1 class="text-8xl text-white font-bold">Foto</h1>
-              <p class="text-white my-3 text-xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                necessitatibus? Quidem doloribus ex iure.
+      <div class="bg-black bg-opacity-30 w-full lg:py-14 2xl:py-24 lg:px-10 2xl:px-20">
+        <div class="swiper swiperFoto w-full lg:h-96 2xl:h-[35rem]" >
+          <div class="swiper-wrapper flex items-center">
+            <div class="swiper-slide text-white">
+              <h1 class="lg:text-6xl 2xl:text-8xl font-semibold">Foto</h1>
+              <p class="lg:text-sm 2xl:text-xl my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                dolorum deleniti eos praesentium, consectetur ipsam.
               </p>
               <button
-                class="bg-blue-500 bg-opacity-70 text-white px-5 py-3 rounded-full"
+                class="bg-blue-800 bg-opacity-70 lg:px-5 2xl:px-9 lg:py-1.5 2xl:py-3 rounded-full lg:text-sm 2xl:text-xl"
               >
                 Selengkapnya
               </button>
             </div>
-            <div class="swiper-slide swiper-dekstop">
+            <div id="img-slider" class="swiper-slide">
               <div
-                class="h-96 rounded-2xl w-full bg-center flex flex-col justify-end px-5 py-5"
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
                 style="
-                  height: 500px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
                 "
               >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-5 px-5"
+                >
+                  <h3 class="text-white uppercase text-lg font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide swiper-dekstop">
+            <div id="img-slider" class="swiper-slide">
               <div
-                class="h-96 rounded-2xl w-full flex flex-col justify-end px-5 py-5"
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
                 style="
-                  height: 500px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  background-position: center;
+                  background-image: url(https://faktualid.com/wp-content/uploads/2022/08/220820sandiaga-uno.jpeg);
                 "
               >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-5 px-5"
+                >
+                  <h3 class="text-white uppercase text-lg font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide swiper-dekstop">
+            <div id="img-slider" class="swiper-slide">
               <div
-                class="h-96 rounded-2xl w-full flex flex-col justify-end px-5 py-5"
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
                 style="
-                  height: 500px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
+                  background-image: url(https://media.suara.com/pictures/653x366/2022/08/22/47658-kolase-ridwan-kamil-sandiaga-uno.jpg);
                 "
               >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-5 px-5"
+                >
+                  <h3 class="text-white uppercase text-lg font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide swiper-dekstop">
+            <div id="img-slider" class="swiper-slide">
               <div
-                class="h-96 rounded-2xl w-full flex flex-col justify-end px-5 py-5"
+                class="bg-gray-200 h-full w-3/4 rounded-2xl bg-cover bg-center"
                 style="
-                  height: 500px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
+                  background-image: url(https://asset.kompas.com/crops/FGkE00w3NfqPIrQTn_tTrrWyanA=/0x0:0x0/750x500/data/photo/2021/04/22/60819d99a708b.jpg);
                 "
               >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-dekstop">
-              <div
-                class="h-96 rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 500px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-dekstop">
-              <div
-                class="h-96 rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 500px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
+                <div
+                  class="bg-black bg-opacity-50 rounded-2xl h-full w-full flex flex-col justify-end py-5 px-5"
+                >
+                  <h3 class="text-white uppercase text-lg font-semibold">
+                    lorem ipsum
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- If we need navigation buttons -->
-
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        <div class="flex justify-center space-x-3 mt-10">
-          <button class="swiper-button-prev">
+        <div class="flex justify-center space-x-3 lg:my-5 2xl:my-24">
+          <button class="button-prev-foto prevEl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-9 w-9 text-white"
+              class="lg:h-8 lg:w-8 2xl:h-12 2xl:w-12 text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth="{1}"
+              stroke-width="1.5"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
                 d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
               />
             </svg>
           </button>
-          <button class="next">
+          <button class="button-next-foto nextEl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-9 w-9 text-white"
+              class="lg:h-8 lg:w-8 2xl:h-12 2xl:w-12 text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth="{1}"
+              stroke-width="1.5"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
                 d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
@@ -179,170 +134,33 @@
         </div>
       </div>
     </div>
-    <!-- Dekstop -->
-    <!-- Mobile -->
-    <div
-      class="w-full h-full bg-no-repeat bg-cover 2xl:hidden xl:hidden lg:hidden md:hidden flex flex-col bg-bottom"
-      style="
-        background-image: url(https://cdn.pixabay.com/photo/2018/04/02/21/33/building-3285254_960_720.jpg);
-      "
-    >
-      <div class="bg-gray-600 bg-opacity-50 h-full w-full py-24">
-        <h1 class="text-6xl font-semibold text-white text-center">Foto</h1>
-        <p class="text-white text-center my-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-          repudiandae officia veritatis dignissimos fugit nihil error
-        </p>
 
-        <div class="swiper" style="padding-right: 50px; padding-left: 50px">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-mobile">
-              <div
-                class="rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 400px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-mobile">
-              <div
-                class="rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 400px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-mobile">
-              <div
-                class="rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 400px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-mobile">
-              <div
-                class="rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 400px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-mobile">
-              <div
-                class="rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 400px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-mobile">
-              <div
-                class="rounded-2xl w-full flex flex-col justify-end px-5 py-5"
-                style="
-                  height: 400px !important;
-                  background: rgba(0, 0, 0, 0.589)
-                    url(https://rmol.id/images/berita/normal/2020/12/346492_08565423122020_Sandiaga_Uno.jpg);
-                  background-blend-mode: darken;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <h1 class="text-white font-semibold">LOREM IPSUM</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-center mt-16">
-          <button class="bg-blue-500 text-white px-5 py-3 rounded-full">
-            Selengkapnya
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile -->
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      var swiper = new Swiper(".swiperFoto", {
+        direction: "horizontal",
+        slidePerView: 2,
+        spaceBetween: 20,
+        navigation: {
+          prevEl: ".button-prev-foto",
+          nextEl: ".button-next-foto",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <!-- script -->
   </body>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
-  <!-- <script src="../js/slider.js"></script> -->
-  <script type="module">
-    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
-
-    const swiper = new Swiper(".swiper", {
-      // Optional parameters
-      direction: "horizontal",
-      //   loop: true, slidesPerView: 'auto',
-      //   autoHeight: true,
-      slidesPerView: 3,
-      spaceBetween: 30,
-      cssMode: true,
-      // If we need pagination
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-      },
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
-    });
-  </script>
 </html>
